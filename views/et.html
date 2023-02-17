@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Expense tracker</title>
+</head>
+<body>
+    <form id="form">
+        <label>Expense Name:</label>
+        <input type="text" name="name" id="ename"><br>
+        <label>Expense Type:</label>
+        <select id="ecategory">
+            <option value="electronics">Electronics</option>
+            <option value="food">Food</option>
+            <option value="clothes">Clothes</option>
+            <option value="travel">Travel</option>
+        </select><br>
+        <label>Expense Amount:</label>
+        <input type="number" name="email" id="eamount"><br>
+        <button type="submit">Submit</button>
+        
+    </form>
+    <ul id="item">
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="et.js"></script>
+</body>
+</html>
