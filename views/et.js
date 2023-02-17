@@ -105,3 +105,4 @@ function editExpense(id,name,cat,price){
     }
 }
 
+
