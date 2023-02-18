@@ -10,8 +10,8 @@ async function addExpense(e){
         const ename=document.getElementById('ename').value
         const etype=document.getElementById('ecategory').value
         const eamount=document.getElementById('eamount').value
-        let editingId=localStorage.getItem('editingId')
         console.log(editingId)
+        
         
         if(editingId){
             var my_obj={
@@ -21,6 +21,7 @@ async function addExpense(e){
                 eamount
             }
             editingId=null
+            
         }
         else{
             var my_obj={
@@ -95,7 +96,7 @@ function removeFromScreen(id){
 
 
 function editExpense(id,name,cat,price){
-    localStorage.setItem('editingId',id)
+    let editingId=id
 
     if (event.target.classList.contains('btn2')) {
         console.log(id,name,cat,price)
